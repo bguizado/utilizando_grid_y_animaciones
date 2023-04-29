@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2rem;
+  height: 100vh;
+  grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "Tarjeta1"
+    "Tarjeta2"
+    "Tarjeta3"
+    "Tarjeta4"
+    "footer"
+  ;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  background-color: #0AF794;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  align-items: center;
+  grid-area: header;
+
+}
+
+header>p {
+  font-size: 2rem;
+  color: rgb(0, 0, 255);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+aside {
+  margin-top: 1rem;
+  grid-area: aside;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 255);
+  padding: 2rem;
+  border: 1px solid aliceblue;
+  background-color: lightyellow;
+}
+
+aside>ul>li {
+  margin-bottom: 10px;
+}
+
+main {
+  grid-area: main;
+  background-color: lightyellow;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+img {
+  
+  max-height: 200px;
+  position: absolute;
+}
+
+section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  z-index: 9999;
+  color: white;
+  font-weight: bold;
+  word-wrap: normal;
+  margin: auto;
+  align-items: center ;
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/15/10/57/pizza-2068272_1280.jpg");
+  padding: 1rem;
+}
+section > p {
+  padding: 1rem;
+  font-weight: bolder;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+  font-size: 1rem;
+}
+
+section:first-child {
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  padding: 0.25rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+
+.Tarjeta1 {
+  grid-area: Tarjeta1;
+  background-color: lightyellow;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.imagen-comida {
+  width: 100px;
+}
+
+
+.Tarjeta2 {
+  grid-area: Tarjeta2;
+  background-color: lightyellow;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.Tarjeta3 {
+  grid-area: Tarjeta3;
+  background-color: lightyellow;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.Tarjeta4 {
+  grid-area: Tarjeta4;
+  background-color: lightyellow;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+footer {
+  grid-area: footer;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.25rem;
+    grid-template-areas:
+      "header header header header header header"
+      ". aside main main main ."
+      ". aside main main main ."
+      ". aside main main main ."
+      ". Tarjeta1 Tarjeta2 Tarjeta3 Tarjeta4 ."
+      ". footer footer footer footer .";
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    flex-direction: row;
+    padding: 2rem;
+  }
+}
