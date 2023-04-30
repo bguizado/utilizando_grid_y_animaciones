@@ -169,6 +169,13 @@ nav a {
   height: 100%;
 }
 
+.Texto_Tarjeta3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
 .Tarjeta4 {
   grid-area: Tarjeta4;
   background-color: lightyellow;
