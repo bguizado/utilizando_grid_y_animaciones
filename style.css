@@ -185,6 +185,17 @@ nav a {
   border-radius: 0.5rem;
 }
 
+.imagen-comida_4 {
+  width: 100%;
+  height: 100%;
+}
+
+.Texto_Tarjeta4 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 footer {
   grid-area: footer;
   border: 2px solid black;
@@ -230,6 +241,16 @@ footer {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    border-radius: 0.5rem;
+  }
+
+  .Tarjeta4 {
+    grid-area: Tarjeta4;
+    background-color: lightyellow;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     border-radius: 0.5rem;
   }
 }
