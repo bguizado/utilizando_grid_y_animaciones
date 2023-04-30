@@ -73,12 +73,6 @@ main {
   border-radius: 0.5rem;
 }
 
-img {
-  
-  max-height: 200px;
-  position: absolute;
-}
-
 section {
   display: flex;
   position: relative;
@@ -119,40 +113,68 @@ nav a {
   margin-right: 10px;
 }
 
-
-
 .Tarjeta1 {
   grid-area: Tarjeta1;
   background-color: lightyellow;
   margin-top: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  align-items: center;
 }
 
-.imagen-comida {
-  width: 100px;
+.imagen-comida_1 {
+  max-height: 100%;
+  width: 184px;
 }
 
+.Texto_Tarjeta1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
 .Tarjeta2 {
   grid-area: Tarjeta2;
   background-color: lightyellow;
   margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   border-radius: 0.5rem;
+}
+
+.imagen-comida_2 {
+  width: 100%;
+  height: 100%;
+}
+
+.Texto_Tarjeta2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .Tarjeta3 {
   grid-area: Tarjeta3;
   background-color: lightyellow;
   margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   border-radius: 0.5rem;
 }
+
+.imagen-comida_3 {
+  width: 100%;
+  height: 100%;
+}
+
+.Texto_Tarjeta3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 
 .Tarjeta4 {
   grid-area: Tarjeta4;
@@ -161,6 +183,17 @@ nav a {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+}
+
+.imagen-comida_4 {
+  width: 100%;
+  height: 100%;
+}
+
+.Texto_Tarjeta4 {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 footer {
@@ -190,5 +223,50 @@ footer {
   header {
     flex-direction: row;
     padding: 2rem;
+  }
+
+  .Tarjeta1 {
+    grid-area: Tarjeta1;
+    background-color: lightyellow;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    justify-content: space-around;
+  }
+
+  .imagen-comida_1 {
+    width: 100%;
+  }
+  
+
+  .Tarjeta2 {
+    grid-area: Tarjeta2;
+    background-color: lightyellow;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-radius: 0.5rem;
+  }
+
+  .Tarjeta3 {
+    grid-area: Tarjeta3;
+    background-color: lightyellow;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+  }
+
+  .Tarjeta4 {
+    grid-area: Tarjeta4;
+    background-color: lightyellow;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-radius: 0.5rem;
   }
 }
