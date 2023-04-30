@@ -73,14 +73,6 @@ main {
   border-radius: 0.5rem;
 }
 
- /* 
-img {
-  
-max-height: 200px;
-  position: absolute; 
-}
-*/
-
 section {
   display: flex;
   position: relative;
@@ -126,13 +118,21 @@ nav a {
   background-color: lightyellow;
   margin-top: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  align-items: center;
 }
 
-.imagen-comida {
-  width: 100px;
+.imagen-comida_1 {
+  max-height: 100%;
+  width: 184px;
+}
+
+.Texto_Tarjeta1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .Tarjeta2 {
@@ -224,6 +224,22 @@ footer {
     flex-direction: row;
     padding: 2rem;
   }
+
+  .Tarjeta1 {
+    grid-area: Tarjeta1;
+    background-color: lightyellow;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    justify-content: space-around;
+  }
+
+  .imagen-comida_1 {
+    width: 100%;
+  }
+  
 
   .Tarjeta2 {
     grid-area: Tarjeta2;
