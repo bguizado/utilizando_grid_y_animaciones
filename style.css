@@ -55,9 +55,14 @@ aside {
   grid-area: aside;
   border-radius: 0.5rem;
   color: rgb(0, 0, 255);
-  padding: 2rem;
+  
   border: 1px solid aliceblue;
   background-color: lightyellow;
+}
+
+aside>ul {
+  list-style: none;
+  padding: 1rem;
 }
 
 aside>ul>li {
@@ -113,20 +118,31 @@ nav a {
   margin-right: 10px;
 }
 
+@keyframes escalar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
 .Tarjeta1 {
   grid-area: Tarjeta1;
   background-color: lightyellow;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   border-radius: 0.5rem;
-  align-items: center;
+  padding: 0.5rem;
+}
+
+.Tarjeta1:hover{
+  animation: escalar 1s ease-in-out;
 }
 
 .imagen-comida_1 {
-  max-height: 100%;
-  width: 184px;
+  width: 100%;
+  height: 100%;
 }
 
 .Texto_Tarjeta1 {
@@ -138,10 +154,14 @@ nav a {
 .Tarjeta2 {
   grid-area: Tarjeta2;
   background-color: lightyellow;
-  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.Tarjeta2:hover{
+  animation: escalar 1s ease-in-out;
 }
 
 .imagen-comida_2 {
@@ -158,10 +178,14 @@ nav a {
 .Tarjeta3 {
   grid-area: Tarjeta3;
   background-color: lightyellow;
-  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.Tarjeta3:hover{
+  animation: escalar 1s ease-in-out;
 }
 
 .imagen-comida_3 {
@@ -175,14 +199,17 @@ nav a {
   text-align: center;
 }
 
-
 .Tarjeta4 {
   grid-area: Tarjeta4;
   background-color: lightyellow;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.Tarjeta4:hover{
+  animation: escalar 1s ease-in-out;
 }
 
 .imagen-comida_4 {
@@ -229,17 +256,12 @@ footer {
     grid-area: Tarjeta1;
     background-color: lightyellow;
     margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     border-radius: 0.5rem;
-    justify-content: space-around;
+    padding: 0.5rem;
   }
-
-  .imagen-comida_1 {
-    width: 100%;
-  }
-  
 
   .Tarjeta2 {
     grid-area: Tarjeta2;
@@ -247,17 +269,20 @@ footer {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     border-radius: 0.5rem;
+    padding: 0.5rem;
   }
 
   .Tarjeta3 {
     grid-area: Tarjeta3;
     background-color: lightyellow;
     margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     border-radius: 0.5rem;
+    padding: 0.5rem;
   }
 
   .Tarjeta4 {
@@ -266,7 +291,8 @@ footer {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     border-radius: 0.5rem;
+    padding: 0.5rem;
   }
 }
